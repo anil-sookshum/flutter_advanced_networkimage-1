@@ -2,7 +2,6 @@ import 'dart:ui' show ImageFilter;
 import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 import 'package:flutter_advanced_networkimage/provider.dart';
 import 'package:flutter_advanced_networkimage/transition.dart';
@@ -103,14 +102,6 @@ class LoadImage extends StatelessWidget {
               ),
             );
           },
-        ),
-        Expanded(
-          child: SvgPicture(
-            AdvancedNetworkSvg(
-              svgUrl,
-              SvgPicture.svgByteDecoder,
-            ),
-          ),
         ),
       ],
     );
